@@ -91,3 +91,50 @@ a {
   border: 1px solid var(--color-accent);
   border-radius: 5px;
 }
+
+/* HOME */
+
+#home {
+  background-color: var(--color--promary);
+  color: var(--color-text);
+  padding: 5rem 1rem;
+  padding: 7rem;
+  text-align: center;
+}
+
+.home_img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid var(--color-accent);
+}
+
+.home_title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home_title_strong {
+  color: var(--color-accent);
+}
+
+.home_description {
+  font-size: 1.3rem;
+}
+
+.home_contact {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.home_contact:hover {
+  background-color: transparent;
+  color: var(--color-text);
+  outline: 2px solid var(--color-accent);
+}
