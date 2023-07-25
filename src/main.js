@@ -17,3 +17,14 @@ document.addEventListener("scroll", () => {
   //   console.log(1 - window.scrollY / homeHeight);
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+// Home 절반정도 내려가면 arrow 버튼이 나오도록.
+const arrowUp = document.querySelector(".arrow_up");
+const arrowHeight = arrowUp.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.style.opacity = 1;
+  } else {
+    arrowUp.style.opacity = 0;
+  }
+});
