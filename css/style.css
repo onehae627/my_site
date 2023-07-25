@@ -197,12 +197,17 @@ a {
 
 .skill_des2 {
   font-size: 1rem;
+  margin: 100px;
 }
 
 /* WORK */
 #work {
   background-color: var(--color--promary);
   color: var(--color-text);
+}
+.work_description {
+  font-size: 1.5rem;
+  margin: 150px;
 }
 
 .projects {
@@ -253,4 +258,41 @@ a {
   width: 50px;
   height: 2px;
   background-color: var(--color-accent);
+}
+
+/* ARROW */
+
+.arrow_up {
+  background-color: var(--color--promary);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 5px 5px 0px 0px var(--color-accent);
+}
+
+/* FOOTER */
+.contact_links a {
+  color: var(--color-black);
+}
+.contact_description {
+  padding: 70px 50px;
+}
+.contact_links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 50px 50px;
+  font-size: 3rem;
+}
+.contact_link {
+  transition: color 250ms ease-in;
+}
+
+.contact_link:hover {
+  color: var(--color-accent);
 }
