@@ -103,14 +103,22 @@ a {
 .header_logo_title {
   font-size: 1.8rem;
 }
-
+.header_toggle {
+  display: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
 .header_menu {
   display: flex;
   gap: 4px;
 }
 
 .header_menu_item {
+  display: block;
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header_menu_item:hover {
@@ -309,7 +317,7 @@ a {
     font-size: 15px;
   }
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
   .title {
     font-size: 2rem;
@@ -320,12 +328,21 @@ a {
   .header {
     flex-direction: column;
     align-items: start;
+    background-color: var(--color--promary);
+  }
+  .header_toggle {
+    display: block;
   }
   .header_menu {
+    display: none;
     flex-direction: column;
     text-align: center;
-    padding: 1rem 4rem;
+    margin: 1rem 4rem;
     gap: 1rem;
+  }
+
+  .header_menu.open {
+    display: flex;
   }
   .header_nav {
     width: 100%;
